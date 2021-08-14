@@ -7,7 +7,7 @@ interface ContainerProps extends FlexProps {
 
 export function Container({ children, ...rest }: ContainerProps) {
   return (
-    <Flex h="100vh">
+    <Flex>
       <Flex
         w="100%"
         maxWidth="1480"

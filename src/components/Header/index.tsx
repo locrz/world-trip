@@ -1,4 +1,5 @@
 import { Flex, Image } from "@chakra-ui/react";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -12,7 +13,11 @@ export function Header() {
       align="center"
       justify="center"
     >
-      <Image src="/logo.svg" />
+      <Link href="/">
+        <a>
+          <Image src="/logo.svg" />
+        </a>
+      </Link>
     </Flex>
   );
 }
